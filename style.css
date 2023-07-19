@@ -5,6 +5,7 @@
 }
 body{
     background-image: linear-gradient(rgb(255, 255, 255),rgba(250, 192, 234, 0.472));
+    text-align: center;
 }
 .btn{
     margin-top: 30px;
@@ -81,7 +82,7 @@ body{
 .banner-container{
     margin: 50px 0;
     width: 100%;
-    height: 80vh;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,15 +101,19 @@ body{
     padding-left: 80px;
 }
 /* Main section styles  */
+main{
+    padding-top: 70px;
+}
 /* game section styles  */
 .gamer-container{
     display: flex;
     width: 100%;
-    height: 80vh;
+    height: 400px;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: auto;
+    margin-bottom: 100px;
 }
 .title{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -126,10 +131,15 @@ body{
 }
 .gamer-content{
     text-align: left;
+    padding-left: 20px;
     /* width: 70%; */
 }
 .gamer-content p{
     width: 80%;
+}
+.small{
+    color: rgb(51, 50, 50);
+    font-weight: 500;
 }
 .gamer-img>img{
     object-fit: cover;
@@ -137,8 +147,9 @@ body{
 }
 /* Online game section styles  */
 .online-game-container{
-    margin: 50px 0;
+    margin: 100px 0;
     text-align: center;
+    height: auto;
 }
 .h1{
     font-size: 3rem;
@@ -170,7 +181,7 @@ body{
 /* Play game section styles  */
 .play-game-container{
     margin: 50px 0px;
-    height: 70vh;
+    height: 600px;
     width: 100%;
     text-align: center;
 }
@@ -205,12 +216,12 @@ body{
 }
 /* Career section styles  */
 .career-container{
+    width: 100vw;
     margin: 0;
     padding-top: 50px;
     padding-left: 30px;
-    width: 100vw;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-    height: 70vh;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -224,18 +235,20 @@ body{
     /* padding: 50px; */
 }
 .career-content{
+    width: 400px;
     padding-bottom: 100px;
 }
 .list2{
     text-align: right;
 }
 .career-img img{
-    width: 600px;
+    width: 500px;
 }
 /* Game type section  */
 .game-type-container{
-    width: 100%;
-    height: 40vh;
+    /* width: 100%; */
+    width: auto;
+    height: 400px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -285,10 +298,10 @@ footer{
 }
 .service-container{
     padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-self: center;
+    align-self: center;
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -312,4 +325,63 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+/* Responsive  */
+/* For mobile device  */
+@media screen and (max-width: 576px) {
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    .navbar,.nav-menu,.gamer-container,.cards,.play-game,.career-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+    .big-font{
+        font-size: 2.5rem;
+    }
+    .play-game-img{
+        width: 400px;
+    }
+    .nav-menu{
+        margin-top: 20px;
+    }
+    .nav-menu h5{
+        margin-bottom: 10px;
+    }
+    .gamer-container{
+        margin-top: 50px;
+    }
+    
+    .game-type{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .gamer-content{
+        text-align: center;
+    }
+    .online-game-container,.play-games-container{
+        padding-top: 100px;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    /* section{
+        margin-top: 30px;
+    } */
+    .play-game{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        flex-direction: column-reverse;
+    }
+    footer{
+        margin-bottom: 0;
+    }
 }
