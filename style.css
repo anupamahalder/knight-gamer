@@ -332,7 +332,8 @@ footer{
 @media screen and (max-width: 576px) {
     body{
         width: 100%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .navbar,.nav-menu,.gamer-container,.cards,.play-game,.career-container{
         flex-direction: column;
@@ -357,6 +358,7 @@ footer{
     }
     .gamer-container{
         margin-top: 50px;
+        padding: 0;
     }
     
     .game-type{
@@ -366,22 +368,56 @@ footer{
     .gamer-content{
         text-align: center;
     }
-    .online-game-container,.play-games-container{
+    .online-game-container{
         padding-top: 100px;
         text-align: center;
         width: 100%;
-        margin: auto;
+    }
+    .game-type{
+        width: 100%;
+        row-gap: 5px;
+        column-gap: 5px;
     }
     /* section{
         margin-top: 30px;
     } */
     .play-game{
+        margin-top: 0;
         display: flex;
         justify-self: center;
         align-self: center;
         flex-direction: column-reverse;
     }
     footer{
-        margin-bottom: 0;
+        margin-bottom: 0px;
+    }
+    .little-img1 {
+        top: 500px;
+        left: -150px;
+    }
+    .game-type>div{
+        width: auto;
+    }
+    .career-container{
+        width: 100%;
+    }
+    .gamer-img{
+        width: auto;
+    }
+    .play-game p{
+        padding-bottom: 20px;
+    }
+    .play-game-img-container{
+        width: auto;
+        margin-top: -100px;
+    }
+    .gamer-img>img {
+        padding-top: 100px;
+        width: 90%;
+    }
+    .icon-container,.service-container{
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
     }
 }
