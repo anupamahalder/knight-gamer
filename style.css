@@ -76,7 +76,6 @@ body{
 }
 .banner-img{
     width: 80%;
-    margin-right: -20px;
 }
 .banner-content>h1{
     font-size: 3rem;
@@ -104,7 +103,7 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 15px 0;
+    margin: 15px 0px;
 }
 .gamer-content{
     text-align: left;
@@ -113,4 +112,19 @@ body{
 .gamer-img>img{
     object-fit: cover;
     width: calc(700px -20px );
+}
+/* Online game section styles  */
+.online-game-container{
+    margin: 50px 0px;
+    text-align: center;
+}
+.cards{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards img,.cards p{
+    width: 240px;
+    margin-bottom: 20px;
 }
