@@ -332,6 +332,7 @@ footer{
 @media screen and (max-width: 576px) {
     body{
         width: 100%;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
@@ -390,6 +391,7 @@ footer{
     }
     footer{
         margin-bottom: 0px;
+        text-align: center;
     }
     .little-img1 {
         top: 500px;
@@ -419,5 +421,49 @@ footer{
         width: 80%;
         text-align: center;
         font-size: 1rem;
+    }
+}
+/* Responsive for Medium devices  */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    *{
+        text-align: center;
+    }
+    .gamer-container{
+        flex-direction: column;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .h1{
+        padding-top: 100px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-self: center;
+        align-self: center;
+    }
+    .card p{
+        text-align: center;
+        margin-left: 80px;
+    }
+    .little-img1 {
+        top: 500px;
+        left: -170px;
+    }
+    .play-game2{
+        padding-top: 70px;
+    }   
+    .play-game1{
+        margin-top: -130px;
+    }
+    .big-font{
+        font-size: 2.5rem;
+    }
+    .play-game-content p{
+        padding-left: 20px;
+    }
+    .play-game-content2 p{
+        padding-left: 70px;
     }
 }
