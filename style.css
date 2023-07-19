@@ -16,12 +16,12 @@ body{
     font-weight: 600;
 }
 .btn:hover{
-    background-color: #f12d92;
+    background-color: #d4247f;
     cursor: pointer;
 }
 /* Navbar styles  */
 .navbar{
-    width: 100vw;
+    width: 100%;
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
@@ -65,9 +65,8 @@ body{
 
 /* Banner styles  */
 .banner-container{
-    margin-top: 50px;
+    margin: 50px 0px;
     width: 100%;
-    margin: auto;
     height: 80vh;
     display: flex;
     justify-content: space-around;
@@ -86,4 +85,32 @@ body{
 .banner-content{
     text-align: left;
     padding-left: 80px;
+}
+/* Main section styles  */
+/* game section styles  */
+.gamer-container{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+.title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    font-weight: 800;
+    font-size: 2rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 0;
+}
+.gamer-content{
+    text-align: left;
+    /* width: 70%; */
+}
+.gamer-img>img{
+    object-fit: cover;
+    width: calc(700px -20px );
 }
