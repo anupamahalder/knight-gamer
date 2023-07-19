@@ -128,3 +128,40 @@ body{
     width: 240px;
     margin-bottom: 20px;
 }
+
+/* Play game section styles  */
+.play-game-container{
+    margin: 50px 0px;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+.play-game{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.play-game p{
+    /* width: 50%; */
+    width: 400px;
+    text-align: center;
+}
+.play-game1{
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+}
+.play-game-img{
+    width: 400px;
+}
+.little-img{
+    position: relative;
+    width: 150px;
+    top: -100px;
+    left: 170px;
+}
+.little-img1{
+    top: 70px;
+    left: 80px;
+}
