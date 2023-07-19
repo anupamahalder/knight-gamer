@@ -22,16 +22,28 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    background-color: rgba(128, 128, 128, 0.439);
+    border-radius: 28px;
+    padding: 10px;
+}
+.follow-us img{
+    width: 30px;
 }
 .nav-menu{
     display: flex;
     gap: 30px;
+    cursor: pointer;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 30px;
+    font-size: 1.3rem;
+}
+.nav-menu h5:hover{
+    color: #FF42A5;
 }
 .game-name{
     font-size: 2rem;
 }
 .g{
-    color: rgb(250, 99, 124);
+    color: #FF42A5;
+    font-size: 2.5rem;
 }
