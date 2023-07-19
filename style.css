@@ -454,6 +454,10 @@ footer{
     .play-game2{
         padding-top: 70px;
     }   
+    .play-game{
+        justify-content: center;
+        align-items: center;
+    }
     .play-game1{
         margin-top: -130px;
     }
@@ -463,7 +467,15 @@ footer{
     .play-game-content p{
         padding-left: 20px;
     }
-    .play-game-content2 p{
+    .play-game-content2{
         padding-left: 70px;
+    }
+    .game-type{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    footer{
+        width: 100%;
+        margin: auto;
     }
 }
