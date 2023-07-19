@@ -19,6 +19,9 @@ body{
     background-color: #d4247f;
     cursor: pointer;
 }
+main{
+    width: 100vw;
+}
 /* Navbar styles  */
 .navbar{
     width: 100%;
@@ -65,7 +68,7 @@ body{
 
 /* Banner styles  */
 .banner-container{
-    margin: 50px 0px;
+    margin: 50px 0;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -89,12 +92,12 @@ body{
 /* game section styles  */
 .gamer-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
+    height: 80vh;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    padding: 20px;
+    padding: auto;
 }
 .title{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -103,7 +106,7 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 .gamer-content{
     text-align: left;
@@ -111,15 +114,16 @@ body{
 }
 .gamer-img>img{
     object-fit: cover;
-    width: calc(700px -20px );
+    width: 650px;
 }
 /* Online game section styles  */
 .online-game-container{
-    margin: 50px 0px;
+    margin: 50px 0;
     text-align: center;
 }
 .cards{
-    margin-top: 50px;
+    width: 100%;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -138,7 +142,7 @@ body{
 }
 .play-game{
     display: flex;
-    /* width: 100%; */
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -164,4 +168,26 @@ body{
 .little-img1{
     top: 70px;
     left: 80px;
+}
+/* Career section styles  */
+.career-container{
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 100vw;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 30px;
+    /* padding: 50px; */
+}
+.career-img img{
+    width: 600px;
 }
