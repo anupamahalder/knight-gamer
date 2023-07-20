@@ -164,19 +164,26 @@ main{
     justify-content: space-around;
     text-align: left;
 }
-.cards img,.cards p{
+.card-img,.cards p{
     width: 240px;
     margin-bottom: 20px;
 }
+.hide-div{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 200px;
+    display: none;
+}
 .card-img:hover{
-    opacity: .1;
-    border: 4px solid #e835a0;
     border-radius: 15px;
-    /* background-color: rgb(97, 94, 94); */
-    background-image: url(./images/Rectangle\ 4.png), linear-gradient(rgba(0, 0, 0, 0.201),rgba(52, 52, 52, 0.229));
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(80%);
+    border: 4px solid #e835a0;
+}
+.card>img:hover .hide-div{
+    visibility: visible;
 }
 
 /* Play game section styles  */
