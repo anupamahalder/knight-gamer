@@ -31,6 +31,7 @@ body{
 }
 .big-font{
     font-size: 3rem;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 
@@ -404,6 +405,7 @@ footer{
     }
     .game-type>div{
         width: 130px;
+        padding: 20px 5px;
     }
     .career-container{
         width: 100%;
@@ -440,11 +442,16 @@ footer{
         row-gap: 15px;
     }
     .icon-container{
-        gap: 0;
         padding-left: 50px;
     }
     .icon-container img{
         width: 30px;
+    }
+    .condition{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 15px;
     }
 }
 /* Responsive for Medium devices  */
