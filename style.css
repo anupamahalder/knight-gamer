@@ -269,6 +269,7 @@ main{
 /* Game type section  */
 .game-type-container{
     /* width: 100%; */
+    margin-top: 50px;
     width: auto;
     height: 400px;
     text-align: center;
