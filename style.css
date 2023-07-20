@@ -216,10 +216,10 @@ main{
 }
 /* Career section styles  */
 .career-container{
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding-top: 50px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     height: auto;
     display: flex;
@@ -335,6 +335,7 @@ footer{
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 40px;
     }
     .navbar,.nav-menu,.gamer-container,.cards,.play-game,.career-container{
         flex-direction: column;
@@ -382,6 +383,9 @@ footer{
     /* section{
         margin-top: 30px;
     } */
+    .game-type-container{
+        padding: 0;
+    }
     .play-game{
         margin-top: 0;
         display: flex;
@@ -392,16 +396,19 @@ footer{
     footer{
         margin-bottom: 0px;
         text-align: center;
+        height: fit-content;
     }
     .little-img1 {
         top: 500px;
         left: -150px;
     }
     .game-type>div{
-        width: auto;
+        width: 130px;
     }
     .career-container{
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .gamer-img{
         width: auto;
@@ -414,13 +421,30 @@ footer{
         margin-top: -100px;
     }
     .gamer-img>img {
-        padding-top: 100px;
-        width: 90%;
+        /* padding-top: 100px; */
+        width: 100%;
+    }
+    .gamer-content p{
+        width: 100%;
+    }
+    .cards{
+        gap: 15px;
     }
     .icon-container,.service-container{
-        width: 80%;
+        width: 100%;
         text-align: center;
         font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 15px;
+    }
+    .icon-container{
+        gap: 0;
+        padding-left: 50px;
+    }
+    .icon-container img{
+        width: 30px;
     }
 }
 /* Responsive for Medium devices  */
@@ -440,6 +464,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
+        row-gap: 30px;
         justify-self: center;
         align-self: center;
     }
@@ -448,15 +473,24 @@ footer{
         margin-left: 80px;
     }
     .little-img1 {
-        top: 500px;
-        left: -170px;
+        top: 420px;
+        left: -160px;
+    }
+    .little-img{
+        width: 130px;
     }
     .play-game2{
         padding-top: 70px;
     }   
+    .play-game-img{
+        width: 350px;
+    }
     .play-game{
         justify-content: center;
         align-items: center;
+    }
+    .play-game p{
+        width: 350px;
     }
     .play-game1{
         margin-top: -130px;
@@ -469,6 +503,8 @@ footer{
     }
     .play-game-content2{
         padding-left: 70px;
+        padding-right: 20px;
+        margin-top: -152px;
     }
     .game-type{
         grid-template-columns: repeat(3,1fr);
@@ -476,7 +512,34 @@ footer{
     }
     footer{
         width: 100%;
-        padding-bottom: 200px;
-        margin: auto;
+        padding-bottom: 150px;
+        height: 350px;
+        /* margin: auto; */
+    }
+    .gamer-content p{
+        width: 100%;
+    }
+    .gamer-content button{
+        width: 30%;
+        margin-left: 300px;
+    }
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .banner-content>h1{
+        /* margin-top: 50px; */
+        font-size: 2.5rem;
+    }
+    .career-img img{
+        width: 350px;
+    }
+    .game-type-container{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .second-play-img{
+        padding-left: 25px;
     }
 }
