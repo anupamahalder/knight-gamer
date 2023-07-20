@@ -174,16 +174,30 @@ main{
     margin: 0 auto;
     position: relative;
     bottom: 200px;
-    display: none;
+    visibility: hidden;
+}
+.card p{
+    margin-top: -30px;
+}
+.watch-now{
+    font-weight: 800;
+    font-size: 1.4rem;
+    position: relative;
+    bottom: 170px;
+    left: 65px;
+    opacity: 0;
 }
 .card-img:hover{
     border-radius: 15px;
-    -webkit-filter: grayscale(10%);
+    -webkit-filter: grayscale(90%);
     filter: grayscale(80%);
     border: 4px solid #e835a0;
 }
-.card>img:hover .hide-div{
+.card-img:hover+.hide-div{
     visibility: visible;
+}
+.card-img:hover~.watch-now{
+    opacity: 1;
 }
 
 /* Play game section styles  */
@@ -460,6 +474,10 @@ footer{
         grid-template-rows: repeat(2,1fr);
         row-gap: 15px;
     }
+    .watch-now{
+        left: 20px;
+        bottom: 150px;
+    }
 }
 /* Responsive for Medium devices  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -519,6 +537,10 @@ footer{
         padding-left: 70px;
         padding-right: 20px;
         margin-top: -152px;
+    }
+    .watch-now{
+        left: 10px;
+        bottom: 150px;
     }
     .game-type{
         grid-template-columns: repeat(3,1fr);
